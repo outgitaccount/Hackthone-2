@@ -1,12 +1,12 @@
 "use client";
-import { useRouter,useSearchParams } from "next/navigation";
-
+import { Suspense } from "react";
+import { useRouter, useSearchParams } from "next/navigation";
 import Image from "next/image";
 import { products } from "@/data/detail"; // Import consolidated products data
 import { Button } from "@/components/ui/button";
 import { PiShoppingCartSimpleBold } from "react-icons/pi";
 
-export default function ProductDetail() {
+function ProductDetailContent() {
   const searchParams = useSearchParams();
   const id = searchParams.get("id");
   const router = useRouter();
@@ -41,16 +41,26 @@ export default function ProductDetail() {
             {product.title2}
           </h2>
           <p className="text-black text-base leading-6 mb-6 lg:w-2/3">
-            {product.description ||
-              "No description available for this product."}
+            {product.description || "No description available for this product."}
           </p>
           <h2 className="text-4xl font-medium mb-6">{product.price}</h2>
-          <Button  onClick={() => router.push("/checkout")}  className="flex items-center gap-2 px-6 py-2 bg-black text-base font-medium text-white hover:bg-gray-800 rounded-full">
+          <Button
+            onClick={() => router.push("/checkout")}
+            className="flex items-center gap-2 px-6 py-2 bg-black text-base font-medium text-white hover:bg-gray-800 rounded-full"
+          >
             <PiShoppingCartSimpleBold size={20} />
             Add to Cart
           </Button>
         </div>
       </div>
     </section>
+  );
+}
+
+export default function ProductDetail() {
+  return (
+    <Suspense fallback={<div className="text-center py-16">Loading...</div>}>
+      <ProductDetailContent />
+    </Suspense>
   );
 }

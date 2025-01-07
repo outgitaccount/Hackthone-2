@@ -1,9 +1,10 @@
 import { Button } from "./ui/button";
+import Image from "next/image";
 
 export default function Featured() {
   return (
     <section className="container mx-auto py-8 font-['Helvetica_Neue'] relative">
-      <main className="m-4 ">
+      <main className="m-4">
         {/* Section Header */}
         <div>
           <h1 className="font-medium text-2xl mb-4">Featured</h1>
@@ -11,9 +12,12 @@ export default function Featured() {
 
         {/* Image Section */}
         <div className="w-full">
-          <img
+          <Image
             src="/Featured.png"
             alt="Runner in shoes"
+            layout="responsive"
+            width={1200} // Replace with the actual width of your image
+            height={800} // Replace with the actual height of your image
             className="w-full h-auto"
           />
         </div>

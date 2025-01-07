@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
@@ -45,7 +45,7 @@ export default function Checkout() {
                   Nike Dri-FIT ADV TechKnit Ultra
                 </h2>
                 <p className="text-sm text-gray-500">
-                  Men's Short-Sleeve Running Top
+                  Men&apos;s Short-Sleeve Running Top
                 </p>
                 <p className="text-sm text-gray-500">
                   Ashen Slate/Cobalt Bliss
@@ -76,7 +76,7 @@ export default function Checkout() {
               />
               <div>
                 <h2 className="text-sm font-semibold">Nike Air Max 97 SE</h2>
-                <p className="text-sm text-gray-500">Men's Shoes</p>
+                <p className="text-sm text-gray-500">Men&apos;s Shoes</p>
                 <p className="text-sm text-gray-500">
                   Flat Pewter/Light Bone/Black/White
                 </p>
@@ -102,7 +102,7 @@ export default function Checkout() {
             <p>₹ 20,890.00</p>
           </div>
           <div className="flex justify-between text-sm mb-4">
-            <p>Estimated Delivery & Handling</p>
+            <p>Estimated Delivery &amp; Handling</p>
             <p>Free</p>
           </div>
           <hr />

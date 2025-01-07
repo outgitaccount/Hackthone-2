@@ -1,3 +1,4 @@
+"use client";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import Image from "next/image";
@@ -69,7 +70,7 @@ export default function Joinn() {
 
           {/* Terms & Conditions */}
           <p className="text-gray-500 text-xs text-center mt-6 w-2/3">
-            By creating an account, you agree to Nike's{" "}
+            By creating an account, you agree to Nike&apos;s{" "}
             <Link href="#">
               <u className="text-black">Privacy Policy</u>
             </Link>{" "}

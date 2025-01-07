@@ -1,3 +1,4 @@
+"use client";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { FiSearch } from "react-icons/fi";
@@ -38,7 +39,7 @@ export default function HelpPage() {
               Electron, Maestro
             </li>
             <li className="text-base text-gray-700 leading-6 flex items-center ml-4">
-              If you enter your PAN information at checkout, you'll be able to
+              If you enter your PAN information at checkout, you&apos;ll be able to
               pay for your order with PayTM or a local credit or debit card.
             </li>
             <li className="text-base text-gray-700 leading-6 flex items-center ml-4">
@@ -50,7 +51,7 @@ export default function HelpPage() {
               Nike Members
             </Link>{" "}
             can store multiple debit or credit cards in their profile for faster
-            checkout. If you're not already a Member,{" "}
+            checkout. If you&apos;re not already a Member,{" "}
             <Link href="#" className="text-black hover:underline">
               join us
             </Link>{" "}
@@ -85,7 +86,7 @@ export default function HelpPage() {
                   Can I pay for my order with multiple methods?
                 </h3>
                 <p className="text-sm text-gray-700">
-                  No, payment for Nike orders can't be split between multiple
+                  No, payment for Nike orders can&apos;t be split between multiple
                   payment methods.
                 </p>
               </div>
@@ -100,13 +101,13 @@ export default function HelpPage() {
               </div>
               <div>
                 <h3 className="font-semibold text-sm">
-                  Why don't I see Apple Pay as an option?
+                  Why don&apos;t I see Apple Pay as an option?
                 </h3>
                 <p className="text-sm text-gray-700">
                   To see Apple Pay as an option in the Nike App or on Nike.com,
-                  you'll need to use a compatible Apple device running the
+                  you&apos;ll need to use a compatible Apple device running the
                   latest OS, be signed in to your iCloud account and have a
-                  supported card in your Wallet. Additionally, you'll need to
+                  supported card in your Wallet. Additionally, you&apos;ll need to
                   use Safari to use Apple Pay on Nike.com.
                 </p>
               </div>
@@ -130,7 +131,7 @@ export default function HelpPage() {
               <ul className="list-none space-y-2 ml-4">
                 <li>
                   <Link href="#" className="text-sm text-black hover:underline">
-                    WHAT ARE NIKE'S DELIVERY OPTIONS?
+                    WHAT ARE NIKE&apos;S DELIVERY OPTIONS?
                   </Link>
                 </li>
                 <li>
@@ -153,11 +154,11 @@ export default function HelpPage() {
               <div>
                 <h3 className="font-bold text-sm">000 800 919 0566</h3>
                 <p className="text-sm text-gray-600">
-                  Products & Orders: 24 hours a day,
+                  Products &amp; Orders: 24 hours a day,
                 </p>
                 <p className="text-sm text-gray-600">7 days a week</p>
                 <p className="text-sm text-gray-600">
-                  Company Info & Enquiries: 07:30
+                  Company Info &amp; Enquiries: 07:30
                 </p>
                 <p className="text-sm text-gray-600">
                   - 16:30, Monday - Friday
@@ -175,7 +176,7 @@ export default function HelpPage() {
             {/* Email */}
             <div className="flex flex-col items-center text-center gap-2">
               <MdEmail className="text-black text-6xl" />
-              <p className="font-bold text-sm">We'll reply within</p>
+              <p className="font-bold text-sm">We&apos;ll reply within</p>
               <p className="text-sm text-gray-600">five business days</p>
             </div>
 

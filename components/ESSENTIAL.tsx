@@ -10,45 +10,42 @@ export default function Essential() {
 
       {/* Grid of Images with Buttons */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {/* Men's Essentials */}
         <div className="relative group">
           <Image
             width={400}
             height={400}
-            alt="Men's Essentials"
+            alt="Men&apos;s Essentials"
             src="/e1.png"
             className="w-full object-cover"
           />
           <button className="absolute bottom-4 left-4 bg-white text-black font-medium text-sm px-4 py-2 rounded-full shadow-md group-hover:scale-105 transition-transform">
-            Men's
+            Men&apos;s
           </button>
         </div>
 
-        {/* Women's Essentials */}
         <div className="relative group">
           <Image
             width={400}
             height={400}
-            alt="Women's Essentials"
+            alt="Women&apos;s Essentials"
             src="/e2.png"
             className="w-full object-cover"
           />
           <button className="absolute bottom-4 left-4 bg-white text-black font-medium text-sm px-4 py-2 rounded-full shadow-md group-hover:scale-105 transition-transform">
-            Women's
+            Women&apos;s
           </button>
         </div>
 
-        {/* Kids' Essentials */}
         <div className="relative group">
           <Image
             width={400}
             height={400}
-            alt="Kids' Essentials"
+            alt="Kids&apos; Essentials"
             src="/e3.png"
             className="w-full object-cover"
           />
           <button className="absolute bottom-4 left-4 bg-white text-black font-medium text-sm px-4 py-2 rounded-full shadow-md group-hover:scale-105 transition-transform">
-            Kids'
+            Kids&apos;
           </button>
         </div>
       </div>

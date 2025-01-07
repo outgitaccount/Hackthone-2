@@ -9,21 +9,21 @@ export default function OrderSummaryPage() {
 
   return (
     <main className="container mx-auto px-4 py-8">
-      <section className="flex flex-col lg:flex-row mx-auto  justify-center gap-12 lg:w-2/3">
+      <section className="flex flex-col lg:flex-row mx-auto justify-center gap-12 lg:w-2/3">
         {/* Left Section */}
         <div className="lg:w-2/3">
           <h2 className="text-xl font-bold mb-4">
             How would you like to get your order?
           </h2>
           <p className="text-sm text-gray-600 mb-4">
-            Customs regulation for India require a copy of the recipient's KYC.
+            Customs regulation for India require a copy of the recipient&apos;s KYC.
             The address on the KYC needs to match the shipping address. Our
             courier will contact you via SMS/email to obtain a copy of your KYC.
             The KYC will be stored securely and used solely for the purpose of
             clearing customs (including sharing it with customs officials) for
             all orders and returns. If your KYC does not match your shipping
             address, please click the link for more information.{" "}
-            <a href="#" className=" underline">
+            <a href="#" className="underline">
               Learn More
             </a>
           </p>
@@ -90,12 +90,12 @@ export default function OrderSummaryPage() {
           </div>
 
           <h3 className="text-lg font-semibold mt-8 mb-4">
-            What's your contact information?
+            What&apos;s your contact information?
           </h3>
           <Input type="email" placeholder="Email" className="w-full mb-4" />
           <Input type="text" placeholder="Phone Number" className="w-full" />
 
-          <h3 className="text-lg font-semibold mt-8 mb-4">What's your PAN?</h3>
+          <h3 className="text-lg font-semibold mt-8 mb-4">What&apos;s your PAN?</h3>
           <Input type="text" placeholder="PAN" className="w-full mb-4" />
           <label className="flex items-center space-x-2">
             <input type="checkbox" />
@@ -113,7 +113,7 @@ export default function OrderSummaryPage() {
                 Privacy Statement
               </a>{" "}
               and{" "}
-              <a href="#" className=" underline">
+              <a href="#" className="underline">
                 Cookie Policy
               </a>
               .
@@ -164,7 +164,7 @@ export default function OrderSummaryPage() {
                     Nike Dri-FIT ADV TechKnit Ultra
                   </h4>
                   <p className="text-xs text-gray-600">
-                    Men's Short-Sleeve Running Top
+                    Men&apos;s Short-Sleeve Running Top
                   </p>
                   <p className="text-xs text-gray-600">Size L, Qty 1</p>
                   <p className="text-sm font-bold">₹ 3,895.00</p>
@@ -181,7 +181,7 @@ export default function OrderSummaryPage() {
                 />
                 <div>
                   <h4 className="text-sm font-bold">Nike Air Max 97 SE</h4>
-                  <p className="text-xs text-gray-600">Men's Shoes</p>
+                  <p className="text-xs text-gray-600">Men&apos;s Shoes</p>
                   <p className="text-xs text-gray-600">Size UK 8, Qty 1</p>
                   <p className="text-sm font-bold">₹ 16,995.00</p>
                 </div>

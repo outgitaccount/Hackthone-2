@@ -1,4 +1,5 @@
 import { Button } from "./ui/button";
+import Image from "next/image";
 
 export default function DontMiss() {
   return (
@@ -6,15 +7,17 @@ export default function DontMiss() {
       <main className="m-4 ">
         {/* Section Header */}
         <div>
-          <h1 className="font-medium text-2xl mb-4">Don't Miss</h1>
+          <h1 className="font-medium text-2xl mb-4">Don&apos;t Miss</h1>
         </div>
 
         {/* Image Section */}
-        <div className="w-full">
-          <img
+        <div className="w-full relative h-[400px]">
+          <Image
             src="/DontMiss.png"
             alt="Runner in shoes"
-            className="w-full h-auto"
+            layout="fill"
+            objectFit="cover"
+            className="rounded-md"
           />
         </div>
 

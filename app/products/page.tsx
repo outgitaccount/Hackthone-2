@@ -1,11 +1,11 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image"; // Import Next.js Image
 import { IoIosArrowUp } from "react-icons/io";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { productsData } from "@/data/products";
 import { LuSettings2 } from "react-icons/lu";
-
 
 export default function Products() {
   const [filter, setFilter] = useState<string | null>(null);
@@ -107,7 +107,7 @@ export default function Products() {
       {/* Products Section */}
       <section className="flex-1">
         {/* Top Controls */}
-        <div className="flex justify-end items-center mb-6  gap-6">
+        <div className="flex justify-end items-center mb-6 gap-6">
           <h1 className="flex items-center gap-2 font-medium text-sm">
             Hide Filters <LuSettings2 size={14} />
           </h1>
@@ -121,11 +121,14 @@ export default function Products() {
           {filteredProducts.map((product) => (
             <div key={product.id} className="border p-4">
               <Link href={`/products/details?id=${product.id}`}>
-                <img
-                  src={product.img.src}
-                  alt={product.title}
-                  className="w-full h-52 object-cover"
-                />
+                <div className="relative w-full h-52">
+                  <Image
+                    src={product.img.src}
+                    alt={product.title}
+                    layout="fill"
+                    objectFit="cover"
+                  />
+                </div>
                 <h2 className="text-sm font-semibold mt-2">{product.title}</h2>
                 <p className="text-xs text-gray-600">{product.subTitle}</p>
                 <p className="text-sm font-semibold mt-1">{product.price}</p>

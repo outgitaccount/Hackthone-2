@@ -26,7 +26,7 @@ export function GearCarousel1() {
       }}
       className="w-full relative px-2"
     >
-      <p className="text-base font-medium mb-2">Shop Men's</p>
+      <p className="text-base font-medium mb-2">Shop Men&apos;s</p>
 
       <CarouselContent>
         {gear1Products.map((item) => (
@@ -44,9 +44,13 @@ export function GearCarousel1() {
                   </CardContent>
                 </Card>
               </div>
-              <div className=" flex justify-between mx-2 mt-2">
-                <h1 className="font-medium text-base  truncate max-w-[70%]">{item.title}</h1>
-                <h2 className="font-medium text-base whitespace-nowrap">{item.price}</h2>
+              <div className="flex justify-between mx-2 mt-2">
+                <h1 className="font-medium text-base truncate max-w-[70%]">
+                  {item.title}
+                </h1>
+                <h2 className="font-medium text-base whitespace-nowrap">
+                  {item.price}
+                </h2>
               </div>
               <h3 className="ml-2 text-base w-[60%] text-[#757575]">
                 {item.title2}
